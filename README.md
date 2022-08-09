@@ -10,12 +10,13 @@ In an application code:
 - `#include "cspy-test.h"`
 - Use the `TEST_EQ()` macro to perform a test.
 
-## Syntax
+### Syntax
 ```c
 TEST_EQ(<testName>, <toBeTested>, <expectedOutput>);
 ```
 Here you can find some practical [examples](https://github.com/felipe-iar/cspy-test/blob/bfebcebe515cc1e14b5673cbf8ecb4c35ef19522/app/app.c#L7-L9).
 
+## Debugger setup
 Load the [cspy-test.mac](app/cspy-test.mac) into the debugger session.
 - Project → Options (<kbd>ALT</kbd>+<kbd>F7</kbd>) → Debugger → "Setup macros".
    - - [x] Use macro file(s) → `$PROJ_DIR$/cspy-test.mac` → OK.
