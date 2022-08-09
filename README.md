@@ -1,5 +1,7 @@
 # cspy-test
-Example of a simple method for performing unit testing using C-Spy macros
+
+## Description
+A simple example of performing unit testing using C-Spy macros.
 
 ## Usage
 Load the [cspy-test.mac](app/cspy-test.mac) into the debugger session.
