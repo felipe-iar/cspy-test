@@ -12,7 +12,7 @@ In an application code:
 ```c
 TEST_EQ(<testName>, <toBeTested>, <expectedOutput>);
 ```
-Here you can find some practical [examples](app/app.c#L7-L9).
+Here you can find some practical [examples](https://github.com/felipe-iar/cspy-test/blob/main/app/app.c#L7-L9).
 
 Load the [cspy-test.mac](app/cspy-test.mac) into the debugger session.
 - Project → Options (<kbd>ALT</kbd>+<kbd>F7</kbd>) → Debugger → "Setup macros".
