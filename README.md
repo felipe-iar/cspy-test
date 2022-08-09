@@ -5,7 +5,7 @@ A simple example of performing low overhead unit testing using the IAR C-SPY mac
 
 ## Usage
 In an application code:
-- `#include "cspy-test.h`
+- `#include "cspy-test.h"`
 - Use the `TEST_EQ()` macro to perform a test.
 
 ## Syntax
