@@ -1,0 +1,40 @@
+/*!
+  \file    cspy-test.mac
+  \brief   C-Spy macros for testing
+  \version 20220809
+*/
+
+/*
+  Usage: load this macro file into the debugger session
+  Steps:
+    - Project settings -> Debugger -> "Setup macros"
+    - $PROJ_DIR$/cspy-test.mac
+*/
+
+__var _breakID;
+
+execUserSetup() {
+  __message "-- C-SPY TEST -> Loading macros.";
+  _breakID = __setCodeBreak("cspy_TEST_EQ", 0, "TEST_EQ()", "TRUE", "");
+}
+
+TEST_EQ() {
+  if (cspy_Param_v1 == cspy_Param_v2) {
+    messagePass(cspy_Param_v1, cspy_Param_v2);
+  } else {
+    messageFail(cspy_Param_v1, cspy_Param_v2);
+  }
+}
+
+messagePass(v1, v2) {
+  __message "-- C-SPY TEST -> ", __toString(cspy_Param_testName, sizeof(cspy_Param_testName)), ". Expected: ", v2, ". Got: ", v1, ". Result: PASS";
+}
+
+messageFail(v1, v2) {
+  __message "-- C-SPY TEST -> ", __toString(cspy_Param_testName, sizeof(cspy_Param_testName)), ". Expected: ", v2, ". Got: ", v1, ". Result: FAIL";
+}
+
+execUserExit() {
+    __clearBreak( _breakID );
+  __message "-- C-SPY TEST -> Unloading macros.";
+}
