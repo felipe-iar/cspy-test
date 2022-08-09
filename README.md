@@ -3,6 +3,8 @@
 ## Description
 A simple example of performing low overhead unit testing using the IAR C-SPY macros.
 
+![image](https://user-images.githubusercontent.com/54443595/183666231-0fe6a51d-fee7-4e69-8f32-5ba32f871eba.png)
+
 ## Usage
 In an application code:
 - `#include "cspy-test.h"`
