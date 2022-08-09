@@ -16,7 +16,7 @@ Here you can find some practical [examples](app/app.c#L7-L9).
 
 Load the [cspy-test.mac](app/cspy-test.mac) into the debugger session.
 - Project → Options (<kbd>ALT</kbd>+<kbd>F7</kbd>) → Debugger → "Setup macros".
-- - [x] Use macro file(s) → `$PROJ_DIR$/cspy-test.mac` → OK.
+   - - [x] Use macro file(s) → `$PROJ_DIR$/cspy-test.mac` → OK.
 - Project → Dowload and Debug (<kbd>CTRL</kbd>+<kbd>D</kbd>).
 - Debug → Go (<kbd>F5</kbd>).
 
